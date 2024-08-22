@@ -12,7 +12,7 @@ import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 
 @RestController
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
 public class UserController {
     @Autowired
     private UserRepository userRepository;

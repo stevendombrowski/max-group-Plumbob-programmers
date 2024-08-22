@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Controller
+@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
 public class LoginController {
     @Autowired
     private UserRepository userRepository;
